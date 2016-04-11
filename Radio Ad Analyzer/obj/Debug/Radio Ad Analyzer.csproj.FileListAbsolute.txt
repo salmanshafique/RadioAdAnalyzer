@@ -1,0 +1,9 @@
+c:\users\salman shafique\documents\visual studio 2013\Projects\Radio Ad Analyzer\Radio Ad Analyzer\bin\Debug\Radio Ad Analyzer.exe.config
+c:\users\salman shafique\documents\visual studio 2013\Projects\Radio Ad Analyzer\Radio Ad Analyzer\obj\Debug\Radio Ad Analyzer.csprojResolveAssemblyReference.cache
+c:\users\salman shafique\documents\visual studio 2013\Projects\Radio Ad Analyzer\Radio Ad Analyzer\obj\Debug\Radio_Ad_Analyzer.Form1.resources
+c:\users\salman shafique\documents\visual studio 2013\Projects\Radio Ad Analyzer\Radio Ad Analyzer\obj\Debug\Radio_Ad_Analyzer.Properties.Resources.resources
+c:\users\salman shafique\documents\visual studio 2013\Projects\Radio Ad Analyzer\Radio Ad Analyzer\obj\Debug\Radio Ad Analyzer.csproj.GenerateResource.Cache
+c:\users\salman shafique\documents\visual studio 2013\Projects\Radio Ad Analyzer\Radio Ad Analyzer\bin\Debug\Radio Ad Analyzer.exe
+c:\users\salman shafique\documents\visual studio 2013\Projects\Radio Ad Analyzer\Radio Ad Analyzer\bin\Debug\Radio Ad Analyzer.pdb
+c:\users\salman shafique\documents\visual studio 2013\Projects\Radio Ad Analyzer\Radio Ad Analyzer\obj\Debug\Radio Ad Analyzer.exe
+c:\users\salman shafique\documents\visual studio 2013\Projects\Radio Ad Analyzer\Radio Ad Analyzer\obj\Debug\Radio Ad Analyzer.pdb

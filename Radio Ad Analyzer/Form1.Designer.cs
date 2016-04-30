@@ -35,10 +35,11 @@
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.Start = new System.Windows.Forms.Button();
-            this.Pause = new System.Windows.Forms.Button();
             this.Stop = new System.Windows.Forms.Button();
             this.axVLCPlugin21 = new AxAXVLC.AxVLCPlugin2();
+            this.btnStartFFMPEG = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.axVLCPlugin21)).BeginInit();
             this.SuspendLayout();
@@ -52,7 +53,7 @@
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(435, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1030, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -89,34 +90,15 @@
             this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.helpToolStripMenuItem.Text = "Help";
             // 
-            // Start
-            // 
-            this.Start.Location = new System.Drawing.Point(283, 40);
-            this.Start.Name = "Start";
-            this.Start.Size = new System.Drawing.Size(61, 23);
-            this.Start.TabIndex = 3;
-            this.Start.Text = "Play";
-            this.Start.UseVisualStyleBackColor = true;
-            this.Start.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // Pause
-            // 
-            this.Pause.Location = new System.Drawing.Point(350, 40);
-            this.Pause.Name = "Pause";
-            this.Pause.Size = new System.Drawing.Size(61, 23);
-            this.Pause.TabIndex = 4;
-            this.Pause.Text = "Pause";
-            this.Pause.UseVisualStyleBackColor = true;
-            this.Pause.Click += new System.EventHandler(this.Pause_Click);
-            // 
             // Stop
             // 
-            this.Stop.Location = new System.Drawing.Point(320, 69);
+            this.Stop.BackColor = System.Drawing.Color.Red;
+            this.Stop.Location = new System.Drawing.Point(152, 245);
             this.Stop.Name = "Stop";
-            this.Stop.Size = new System.Drawing.Size(61, 23);
+            this.Stop.Size = new System.Drawing.Size(75, 23);
             this.Stop.TabIndex = 5;
             this.Stop.Text = "Stop";
-            this.Stop.UseVisualStyleBackColor = true;
+            this.Stop.UseVisualStyleBackColor = false;
             this.Stop.Click += new System.EventHandler(this.Stop_Click);
             // 
             // axVLCPlugin21
@@ -125,16 +107,48 @@
             this.axVLCPlugin21.Location = new System.Drawing.Point(12, 40);
             this.axVLCPlugin21.Name = "axVLCPlugin21";
             this.axVLCPlugin21.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axVLCPlugin21.OcxState")));
-            this.axVLCPlugin21.Size = new System.Drawing.Size(264, 246);
+            this.axVLCPlugin21.Size = new System.Drawing.Size(1006, 174);
             this.axVLCPlugin21.TabIndex = 6;
+            // 
+            // btnStartFFMPEG
+            // 
+            this.btnStartFFMPEG.BackColor = System.Drawing.Color.Chartreuse;
+            this.btnStartFFMPEG.Cursor = System.Windows.Forms.Cursors.AppStarting;
+            this.btnStartFFMPEG.Location = new System.Drawing.Point(38, 245);
+            this.btnStartFFMPEG.Name = "btnStartFFMPEG";
+            this.btnStartFFMPEG.Size = new System.Drawing.Size(75, 23);
+            this.btnStartFFMPEG.TabIndex = 7;
+            this.btnStartFFMPEG.Text = "Start FFMPEG";
+            this.btnStartFFMPEG.UseVisualStyleBackColor = false;
+            this.btnStartFFMPEG.Click += new System.EventHandler(this.btnStartFFMPEG_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(387, 245);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "Start Crop";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(504, 245);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 9;
+            this.button2.Text = "Stop Crop";
+            this.button2.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
-            this.ClientSize = new System.Drawing.Size(435, 299);
+            this.ClientSize = new System.Drawing.Size(1030, 296);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnStartFFMPEG);
             this.Controls.Add(this.axVLCPlugin21);
             this.Controls.Add(this.Stop);
-            this.Controls.Add(this.Pause);
-            this.Controls.Add(this.Start);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
@@ -155,10 +169,11 @@
         private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem viewToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
-        private System.Windows.Forms.Button Start;
-        private System.Windows.Forms.Button Pause;
         private System.Windows.Forms.Button Stop;
         private AxAXVLC.AxVLCPlugin2 axVLCPlugin21;
+        private System.Windows.Forms.Button btnStartFFMPEG;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
       
     }
 }

@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Media;
 using AXVLC;
 using AxAXVLC;
+//using NAudio.MP3FileReader;
 
 
 namespace Radio_Ad_Analyzer
@@ -23,7 +24,6 @@ namespace Radio_Ad_Analyzer
 
         private void addAudioFilesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
             OpenFileDialog openfiledialog = new OpenFileDialog();
 
             openfiledialog.Title = "Add Audio Files";
@@ -35,27 +35,30 @@ namespace Radio_Ad_Analyzer
                 var uri = new Uri(@openfiledialog.FileName);
                 var convertedURI = uri.AbsoluteUri;
                 axVLCPlugin21.playlist.add(convertedURI);
-
             }
         }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            axVLCPlugin21.playlist.play();
-
-        }
-
-        private void Pause_Click(object sender, EventArgs e)
-        {
-            axVLCPlugin21.playlist.pause();
-        }
-
         private void Stop_Click(object sender, EventArgs e)
         {
             axVLCPlugin21.playlist.stop();
         }
 
         private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnStartFFMPEG_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process process = new System.Diagnostics.Process();
+            System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();
+            startInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
+            startInfo.FileName = "ffplay.exe";
+            //startInfo.Arguments = @"d:/1.mp3";
+            process.StartInfo = startInfo;
+            process.Start();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
         {
 
         }
